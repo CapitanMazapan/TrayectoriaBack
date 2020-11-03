@@ -104,13 +104,24 @@ WSGI_APPLICATION = 'TrayectoriaBack.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME':'trayectoriadb',
+#         'USER':'postgres',
+#         'PASSWORD': '12345',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432' 
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'trayectoriadb',
-        'USER':'postgres',
-        'PASSWORD': '12345',
-        'HOST': '127.0.0.1',
+        'NAME':'d66s2s6jnmpu28',
+        'USER':'fwxpjemvewzsjv',
+        'PASSWORD': 'e1b49b3bff874654be5488053e7e7edba1e6e33083817dabb915ecdcca74b44c',
+        'HOST': 'ec2-52-206-15-227.compute-1.amazonaws.com',
         'PORT': '5432' 
     }
 }
