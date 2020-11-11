@@ -22,6 +22,7 @@ from rest_framework import permissions
 # from rest_framework_swagger.views import get_swagger_view
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from Login.views import UserViewSet
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
@@ -49,6 +50,4 @@ urlpatterns = [
     re_path(r'^api/v1/login/', include('Login.urls')),
     re_path(r'^api/v1/profile/', include('Profile.urls')),
     re_path(r'^api/v1/', include('Dashboard.urls')),
-    re_path(r'^rest-auth/', include('rest_auth.urls')),
-    re_path(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
 ]

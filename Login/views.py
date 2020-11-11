@@ -7,7 +7,6 @@ from rest_framework import viewsets
 from .serializers import UserSerializer 
 
 class CustomAuthToken(ObtainAuthToken):
-
     def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data, context={'request': request})
         serializer.is_valid(raise_exception=True)
