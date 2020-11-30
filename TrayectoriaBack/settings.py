@@ -21,7 +21,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = [config('ALLOWED_HOSTS_remoto')]
+ALLOWED_HOSTS = [config('ALLOWED_HOST_AWS1', 'ALLOWED_HOST_AWS2')]
 
 
 # Application definition
@@ -107,12 +107,12 @@ WSGI_APPLICATION = 'TrayectoriaBack.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config('ENGINE_remoto'),
-        'NAME': config('NAME_remoto'),
-        'USER': config('USER_remoto'),
-        'PASSWORD': config('PASSWORD_remoto'),
-        'HOST': config('HOST_remoto'),
-        'PORT': config('PORT_remoto') 
+        'ENGINE': config('ENGINE_AWS'),
+        'NAME': config('NAME_AWS'),
+        'USER': config('USER_AWS'),
+        'PASSWORD': config('PASSWORD_AWS'),
+        'HOST': config('HOST_AWS'),
+        'PORT': config('PORT_AWS') 
     }
 }
 
