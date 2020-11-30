@@ -21,7 +21,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = [config('ALLOWED_HOST_AWS1', 'ALLOWED_HOST_AWS2')]
+ALLOWED_HOSTS = [config('ALLOWED_HOST_AWS1'), config('ALLOWED_HOST_AWS2')]
 
 
 # Application definition
